@@ -1,0 +1,29 @@
+.hero {
+  background-color: rgb(65, 68, 85);
+}
+
+.hero-title {
+  display: block;
+  text-align: center;
+  padding-top: 520px;
+  font-family: "Noto Serif", sans-serif;
+}
+
+.hero-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 200px;
+  padding: 15px 35px;
+  background-color: #333333;
+}
+
+.hero-button--text {
+  display: block;
+  color: #fff;
+  padding-top: 8px;
+  text-transform: uppercase;
+  line-height: 1.16;
+  letter-spacing: 0.1em;
+  font-size: 18px;
+}

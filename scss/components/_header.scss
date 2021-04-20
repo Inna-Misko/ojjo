@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(65, 68, 85);
+}
+
+.header-nav {
+  display: flex;
+}
+.header-nav__list:nth-child(-n + 2) {
+  margin-right: 40px;
+}
+
+.header-adress__list {
+  margin-right: 40px;
+}
