@@ -19,6 +19,12 @@ a {
   font-style: normal;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   height: auto;
   max-width: 1200px;
@@ -160,4 +166,45 @@ a {
   line-height: 1.17;
   font-size: 24px;
   font-weight: 500px;
+}
+
+.salons {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: black;
+}
+.salons__text {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 400px;
+  text-align: center;
+}
+.salons__title {
+  margin: 0px;
+  margin-bottom: 45px;
+  font-size: 30px;
+  text-align: center;
+}
+.salons__thumb {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  max-width: 730px;
+  height: 100px;
+}
+.salons__thumb--discribe {
+  margin: 0px;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+}
+.salons__button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px 35px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #333333;
 }/*# sourceMappingURL=main.css.map */
