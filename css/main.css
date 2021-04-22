@@ -165,7 +165,6 @@ img {
   text-align: center;
   line-height: 1.17;
   font-size: 24px;
-  font-weight: 500px;
 }
 
 .salons {
@@ -183,7 +182,10 @@ img {
 .salons__title {
   margin: 0px;
   margin-bottom: 45px;
+  font-family: "Noto Serif", sans-serif;
   font-size: 30px;
+  font-weight: 700;
+  line-height: 1.36;
   text-align: center;
 }
 .salons__thumb {
@@ -207,4 +209,45 @@ img {
   color: #000;
   background-color: #fff;
   border: 1px solid #333333;
+}
+
+.advices {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+.advices__text {
+  color: #000;
+  font-size: 21px;
+  line-height: 1.4;
+}
+.advices__title {
+  color: #000;
+  margin-bottom: 60px;
+  font-family: "Noto Serif", sans-serif;
+  font-size: 30px;
+  line-height: 1.36;
+}
+.advices__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.advices__imges--list {
+  position: relative;
+  padding-bottom: 20px;
+}
+.advices__box {
+  position: absolute;
+  max-height: 87px;
+  bottom: 50px;
+  width: 50%;
+  left: 30%;
+}
+.advices__box--text {
+  text-align: center;
+  font-size: 21px;
+  line-height: 1.4;
 }/*# sourceMappingURL=main.css.map */
