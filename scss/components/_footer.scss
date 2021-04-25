@@ -1,0 +1,14 @@
+.footer {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  color: #333;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.box-width {
+  width: 255px;
+}

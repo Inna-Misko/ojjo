@@ -12,14 +12,12 @@
   &__title {
     color: #000;
     margin-bottom: 60px;
-    font-family: "Noto Serif", sans-serif;
-    font-size: 30px;
-    line-height: 1.36;
   }
 
   &__images {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 60px;
   }
   &__imges--list {
     position: relative;
@@ -27,15 +25,23 @@
   }
   &__box {
     position: absolute;
-    max-height: 87px;
-    bottom: 50px;
-    width: 50%;
-    left: 30%;
+    height: 87px;
+    bottom: 39px;
+    left: 2%;
 
     &--text {
       text-align: center;
       font-size: 21px;
       line-height: 1.4;
     }
+  }
+
+  &__button {
+    padding: 20px 35px 15px 35px;
+    background-color: #333333;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.1em;
   }
 }
