@@ -41,7 +41,9 @@ h2 {
   margin-right: auto;
 }
 
-.header {
+.header__box {
+  position: absolute;
+  top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,45 +52,81 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #414455;
 }
-
-.header-nav {
+.header__search--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+.header__search {
+  margin-right: 13px;
+  margin-bottom: 6px;
+  width: 24px;
+  height: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.header-nav__list:nth-child(-n+2) {
+.header__nav--list:nth-child(-n+2) {
   margin-right: 40px;
 }
-
-.header-adress__list {
+.header__nav--list:last-child {
+  margin-right: 126px;
+}
+.header__logo {
+  margin-right: 102px;
+}
+.header__adress--button {
+  border: none;
+  color: #fff;
+  border-color: transparent;
+  background-color: transparent;
+}
+.header__adress--list {
   margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero {
-  background-color: #414455;
+  background-image: url(../img/bg/bgc.jpg);
+  padding-top: 60px;
 }
-
-.hero-title {
-  text-align: center;
+.hero__container {
+  position: relative;
+}
+.hero__title {
   padding-top: 520px;
-  font-family: "Noto Serif", sans-serif;
-  font-size: 36px;
   margin-bottom: 50px;
+  font-family: "Noto Serif", sans-serif;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.36;
+  letter-spacing: 4px;
 }
-
-.hero-button {
+.hero__button {
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 200px;
   padding: 15px 35px;
+  border: 1px solid #ffffff;
   background-color: #333333;
 }
-
-.hero-button--text {
+.hero__button--text {
   display: block;
   color: #fff;
   padding-top: 8px;
@@ -174,7 +212,7 @@ h2 {
 .salons {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: black;
+  background-image: url(../img/bg/rectangle.jpg);
 }
 .salons__text {
   display: block;
@@ -281,7 +319,7 @@ h2 {
 .mailing {
   padding-top: 100px;
   padding-bottom: 120px;
-  background-color: black;
+  background-image: url(../img/bg/rectangle.jpg);
 }
 .mailing__advice {
   margin: 0px;
@@ -300,8 +338,25 @@ h2 {
 .mailing__menu {
   margin-right: 95px;
 }
+.mailing__menu--list {
+  position: relative;
+}
 .mailing__menu--list:nth-child(-n+2) {
   margin-bottom: 15px;
+}
+.mailing__menu--list::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+.mailing__menu--list::before {
+  display: block;
+  background-image: url(../img/bg/subscribe__icon.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -30px;
+  bottom: 3px;
 }
 .mailing__bg {
   border: 1px solid #ffffff;
@@ -317,6 +372,10 @@ h2 {
   background-color: #333;
   padding: 15px 35px;
   color: #fff;
+}
+.mailing__button--text {
+  display: block;
+  margin-top: 5px;
 }
 .mailing__button:hover, .mailing__button:focus {
   background-color: #fff;
@@ -336,7 +395,34 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.footer__links-menu--list:nth-child(n+2), .footer__pay-menu--list:nth-child(n+2), .footer__contacts-menu--list:nth-child(n+2), .footer__social-menu--list:nth-child(n+2) {
+  margin-bottom: 15px;
+}
+.footer__pay-menu--icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+.footer__social--text {
+  margin: 0;
+}
+.footer__icons-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__icons-menu--list:nth-child(-n+4) {
+  margin-right: 23px;
+}
 
 .box-width {
   width: 255px;
+}
+
+.list-blank:first-child {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */

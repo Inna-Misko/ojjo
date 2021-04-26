@@ -7,8 +7,37 @@
     display: flex;
     justify-content: space-between;
   }
+
+  &__links-menu--list:nth-child(n + 2),
+  &__pay-menu--list:nth-child(n + 2),
+  &__contacts-menu--list:nth-child(n + 2),
+  &__social-menu--list:nth-child(n + 2) {
+    margin-bottom: 15px;
+  }
+
+  &__pay-menu--icons {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  &__social--text {
+    margin: 0;
+  }
+
+  &__icons-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icons-menu--list:nth-child(-n + 4) {
+    margin-right: 23px;
+  }
 }
 
 .box-width {
   width: 255px;
+}
+
+.list-blank:first-child {
+  margin-bottom: 30px;
 }

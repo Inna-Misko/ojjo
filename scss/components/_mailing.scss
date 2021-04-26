@@ -1,7 +1,7 @@
 .mailing {
   padding-top: 100px;
   padding-bottom: 120px;
-  background-color: black;
+  background-image: url(../img/bg/rectangle.jpg);
 
   &__advice {
     margin: 0px;
@@ -18,9 +18,28 @@
   &__menu {
     margin-right: 95px;
 
+    &--list {
+      position: relative;
+    }
     &--list:nth-child(-n + 2) {
       margin-bottom: 15px;
     }
+  }
+
+  &__menu--list::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+
+  &__menu--list::before {
+    display: block;
+    background-image: url(../img/bg/subscribe__icon.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -30px;
+    bottom: 3px;
   }
 
   &__bg {
@@ -38,6 +57,11 @@
     background-color: #333;
     padding: 15px 35px;
     color: #fff;
+
+    &--text {
+      display: block;
+      margin-top: 5px;
+    }
   }
 
   &__button:hover,
