@@ -19,10 +19,16 @@
     justify-content: space-between;
     margin-bottom: 60px;
   }
-  &__imges--list {
+  &__images--list {
     position: relative;
-    padding-bottom: 20px;
   }
+
+  &__images--list:focus,
+  &__images--list:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    text-shadow: #fc0 1px 0 10px;
+  }
+
   &__box {
     position: absolute;
     height: 87px;
@@ -43,5 +49,10 @@
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.1em;
+  }
+  &__button:hover,
+  &__button:focus {
+    background-color: #fff;
+    color: #333;
   }
 }

@@ -1,6 +1,8 @@
 .hero {
   background-image: url(../img/bg/bgc.jpg);
   padding-top: 60px;
+  padding-bottom: 150px;
+  background-position: center;
 
   &__container {
     position: relative;
@@ -22,17 +24,25 @@
     margin-left: auto;
     padding-bottom: 200px;
     padding: 15px 35px;
+    color: #fff;
     border: 1px solid #ffffff;
     background-color: #333333;
   }
 
   &__button--text {
     display: block;
-    color: #fff;
+
     padding-top: 8px;
     text-transform: uppercase;
     line-height: 1.16;
     letter-spacing: 0.1em;
     font-size: 18px;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    color: #333333;
+    background-color: #fff;
+    border: 1px solid #333;
   }
 }

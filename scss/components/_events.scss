@@ -53,6 +53,12 @@
     position: relative;
   }
 
+  &__list:hover,
+  &__list:focus {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    text-shadow: #fc0 1px 0 10px;
+  }
+
   &__list:nth-child(-n + 3) {
     margin-bottom: 30px;
   }
