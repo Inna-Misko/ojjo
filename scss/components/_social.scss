@@ -16,9 +16,13 @@
     justify-content: center;
   }
 
+  &__menu--list {
+    transition: box-shadow $animation-scale, transform $animation-scale;
+  }
+
   &__menu--list:hover,
   &__menu--list:focus {
     box-shadow: $boxes-shadow;
-    transition: $animation;
+    transform: scale(1.05);
   }
 }

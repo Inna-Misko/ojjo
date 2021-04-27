@@ -29,7 +29,7 @@
       color: $black-color;
       border: 1px solid #d6d6d6;
       box-shadow: 5px 5px 5px rgb(0 0 0 / 50%);
-      transition: background-color $animation;
+      transition: background-color $animation-buttons;
     }
 
     &--button:hover,
@@ -52,7 +52,7 @@
 
   &__list {
     position: relative;
-    transition: box-shadow $animation;
+    transition: box-shadow $animation-scale, transform $animation-scale;
   }
 
   &__list:hover,

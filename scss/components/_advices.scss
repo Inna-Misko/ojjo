@@ -21,13 +21,14 @@
   }
   &__images--list {
     position: relative;
-    transition: $animation;
+    transition: transform $animation-scale, box-shadow $animation-scale;
   }
 
   &__images--list:focus,
   &__images--list:hover {
     box-shadow: $boxes-shadow;
     text-shadow: $text-shadow;
+    transform: scale(1.05);
   }
 
   &__box {
@@ -50,6 +51,7 @@
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.1em;
+    transition: background-color $animation-buttons;
   }
   &__button:hover,
   &__button:focus {

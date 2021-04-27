@@ -43,6 +43,7 @@
     font-size: 18px;
     letter-spacing: 0.1em;
     line-height: 1.17;
+    transition: background-color $animation-buttons;
   }
 
   &__button:focus,

@@ -57,6 +57,7 @@
     background-color: $grey-color;
     padding: 15px 35px;
     color: $white-color;
+    transition: background-color $animation-buttons;
 
     &--text {
       display: block;
