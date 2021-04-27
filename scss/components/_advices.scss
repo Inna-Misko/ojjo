@@ -4,13 +4,13 @@
   text-align: center;
 
   &__text {
-    color: #000;
+    color: $black-color;
     font-size: 21px;
     line-height: 1.4;
   }
 
   &__title {
-    color: #000;
+    color: $black-color;
     margin-bottom: 60px;
   }
 
@@ -21,12 +21,13 @@
   }
   &__images--list {
     position: relative;
+    transition: $animation;
   }
 
   &__images--list:focus,
   &__images--list:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    text-shadow: #fc0 1px 0 10px;
+    box-shadow: $boxes-shadow;
+    text-shadow: $text-shadow;
   }
 
   &__box {
@@ -44,15 +45,15 @@
 
   &__button {
     padding: 20px 35px 15px 35px;
-    background-color: #333333;
-    color: #fff;
+    background-color: $grey-color;
+    color: $white-color;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.1em;
   }
   &__button:hover,
   &__button:focus {
-    background-color: #fff;
-    color: #333;
+    background-color: $white-color;
+    color: $grey-color;
   }
 }

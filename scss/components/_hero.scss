@@ -24,9 +24,9 @@
     margin-left: auto;
     padding-bottom: 200px;
     padding: 15px 35px;
-    color: #fff;
-    border: 1px solid #ffffff;
-    background-color: #333333;
+    color: $white-color;
+    border: 1px solid $white-color;
+    background-color: $grey-color;
   }
 
   &__button--text {
@@ -41,8 +41,8 @@
 
   &__button:hover,
   &__button:focus {
-    color: #333333;
-    background-color: #fff;
-    border: 1px solid #333;
+    color: $grey-color;
+    background-color: $white-color;
+    border: 1px solid $grey-color;
   }
 }

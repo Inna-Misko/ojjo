@@ -1,7 +1,7 @@
 .footer {
   padding-top: 80px;
   padding-bottom: 20px;
-  color: #333;
+  color: $grey-color;
 
   &__box {
     display: flex;
@@ -50,9 +50,9 @@
 }
 
 .icons-effect {
-  fill: #333;
+  fill: $grey-color;
 }
 
 .icons-effect:hover {
-  fill: rgb(68, 96, 104);
+  fill: $hover-icons-social-footer;
 }

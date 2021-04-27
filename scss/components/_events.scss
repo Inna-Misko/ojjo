@@ -5,7 +5,7 @@
   &__discribe {
     margin: 0px;
     margin-bottom: 15px;
-    color: #000;
+    color: $black-color;
     font-weight: 400;
     text-align: center;
   }
@@ -13,7 +13,7 @@
   &__title {
     margin-top: 0px;
     margin-bottom: 60px;
-    color: #000;
+    color: $black-color;
   }
 
   &__menu {
@@ -26,9 +26,10 @@
       padding-top: 22px;
       padding-bottom: 17px;
       background-color: #f9f9f9;
-      color: #000;
+      color: $black-color;
       border: 1px solid #d6d6d6;
       box-shadow: 5px 5px 5px rgb(0 0 0 / 50%);
+      transition: background-color $animation;
     }
 
     &--button:hover,
@@ -36,9 +37,9 @@
       width: 165px;
       padding-top: 22px;
       padding-bottom: 17px;
-      background-color: #333;
-      color: #fff;
-      box-shadow: 5px 5px 5px rgb(0 0 0 / 50%);
+      background-color: $grey-color;
+      color: $white-color;
+      box-shadow: $boxes-shadow;
       border: transparent;
     }
   }
@@ -51,12 +52,14 @@
 
   &__list {
     position: relative;
+    transition: box-shadow $animation;
   }
 
   &__list:hover,
   &__list:focus {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    text-shadow: #fc0 1px 0 10px;
+    box-shadow: $boxes-shadow;
+    text-shadow: $text-shadow;
+    transform: scale(1.05);
   }
 
   &__list:nth-child(-n + 3) {

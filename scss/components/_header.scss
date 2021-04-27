@@ -1,6 +1,4 @@
 .header {
-  // padding-bottom: 200px;
-
   &__box {
     position: absolute;
     top: 40px;
@@ -11,7 +9,7 @@
   &__search--link {
     display: flex;
     align-items: center;
-    color: #fff;
+    color: $white-color;
   }
   &__search {
     margin-right: 13px;
@@ -39,7 +37,7 @@
 
   &__adress--button {
     border: none;
-    color: #fff;
+    color: $white-color;
     border-color: transparent;
     background-color: transparent;
   }
